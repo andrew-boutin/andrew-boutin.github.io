@@ -4,8 +4,6 @@ I made this site just to try out [GitHub Pages](https://pages.github.com/) using
 
 **[andrewboutin.com](http://www.andrewboutin.com)** is my actual personal website if you want to check it out.
 
-======
-
 #### Author
 
 Andy Boutin
