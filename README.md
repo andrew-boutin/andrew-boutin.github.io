@@ -1,11 +1,6 @@
-## Welcome to my GitHub Pages Site
+# My Personal Site
 
-I made [this site](https://andrew-boutin.github.io/) just to try out [GitHub Pages](https://pages.github.com/) using [Jekyll](https://jekyllrb.com/).
+This is my personal site www.andrewboutin.com hosted with GitHub pages.
 
-**[andrewboutin.com](http://www.andrewboutin.com)** is my actual personal website if you want to check it out.
+I made it with html, css, and javascript.
 
-#### Author
-
-Andy Boutin
-
-[andrewboutin.com](http://www.andrewboutin.com)
