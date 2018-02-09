@@ -91,3 +91,14 @@ body,
     background-repeat: no-repeat;
     width: 100%;
 }
+.background div {
+    color: orange;
+    transition: width 1s ease-out;
+    background-color: white;
+}
+.collapsed {
+    width: 0%;
+}
+.expanded {
+    width: 100%;
+}

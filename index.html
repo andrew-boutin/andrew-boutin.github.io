@@ -22,8 +22,8 @@
             </p>
         </div>
         <div class="nav">
-            <button>About</button>
-            <button>Projects</button>
+            <button onclick="toggleContent('about');">About</button>
+            <button onclick="toggleContent('projects');">Projects</button>
         </div>
         <div class="external">
             <ul>
@@ -35,6 +35,12 @@
         </div>
     </div>
     <div class="background">
+        <div id="about" class="collapsed">
+            About
+        </div>
+        <div id="projects" class="collapsed">
+            Projects
+        </div>
         <img src="images/background-zelda.jpg" alt="Background Image">
     </div>
 </body>
