@@ -15,23 +15,23 @@
     transform: translateX(0);
   } 
 }
-
 body {
     overflow: hidden;
     margin: 0;
+    height: 100vh;
+    display: flex;
 }
 .control {
-    width: 192px;
-    float: left;
     border-right: 5px solid orange;
-    display: table;
-    height:100vh;
+    width: 192px;
+    height: 100%;
+    flex: 0 1 auto;
     font-weight: bold;
     text-align: center;
     animation: 1s ease-out 0s 1 slideInFromLeft;
 }
 .profile img {
-    max-width: 100%;
+    max-width: 97%;
     border-radius: 50%;
     border: solid black;
 }
@@ -83,18 +83,18 @@ body,
     background-color: black;
 }
 .background {
-    overflow: hidden;
     animation: 1s ease-out 0s 1 slideInFromRight;
-}
-.background img {
+    background-image: url("../images/background-zelda.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-    width: 100%;
+    height:100%;
+    flex: 1;
 }
 .background div {
     color: orange;
     transition: width 1s ease-out;
     background-color: white;
+    height: 100%;
 }
 .collapsed {
     width: 0%;
