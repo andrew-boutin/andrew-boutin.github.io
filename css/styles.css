@@ -37,7 +37,6 @@ body {
 }
 .profile p {
     margin: 0;
-    color: orange;
 }
 .nav {
     height: 100%;
@@ -47,13 +46,9 @@ body {
     margin:0 auto;
     border: none;
     font-size: 32px;
-    color: orange;
 }
 .nav button:hover {
     text-decoration: underline;
-}
-.external {
-    background-color:white;
 }
 .external ul {
     margin: 0;
@@ -79,8 +74,14 @@ body {
 body,
 .control,
 .nav button,
-.external {
+.external,
+.background div {
     background-color: black;
+}
+/*.background div,*/
+.profile p,
+.nav button {
+    color: orange;
 }
 .background {
     animation: 1s ease-out 0s 1 slideInFromRight;
@@ -91,14 +92,18 @@ body,
     flex: 1;
 }
 .background div {
-    color: orange;
-    transition: width 1s ease-out;
-    background-color: white;
     height: 100%;
+    overflow: hidden;
 }
 .collapsed {
+    transition: color 1s ease-out,
+    width 0.5s 1s ease-out;
     width: 0%;
+    color: black;
 }
 .expanded {
+    transition: width 1s ease-out,
+    color 0.5s 1s ease-out;
     width: 100%;
+    color: orange;
 }
