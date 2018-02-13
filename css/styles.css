@@ -94,6 +94,7 @@ body,
 .background div {
     height: 100%;
     overflow: hidden;
+    display: inline-block;
 }
 .collapsed {
     transition: color 1s ease-out,
