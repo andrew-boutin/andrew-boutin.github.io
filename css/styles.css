@@ -49,6 +49,7 @@ body {
 }
 .nav button:hover {
     text-decoration: underline;
+    cursor: pointer;
 }
 .external ul {
     margin: 0;
