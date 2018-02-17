@@ -78,7 +78,6 @@ body,
 .background div {
     background-color: black;
 }
-/*.background div,*/
 .profile p,
 .nav button {
     color: orange;
@@ -95,16 +94,22 @@ body,
     height: 100%;
     overflow: hidden;
     display: inline-block;
+    overflow: auto;
+    color: orange;
 }
 .collapsed {
-    transition: color 1s ease-out,
-    width 0.5s 1s ease-out;
+    transition: width 0.5s 1s ease-out;
     width: 0%;
-    color: black;
 }
 .expanded {
-    transition: width 1s ease-out,
-    color 0.5s 1s ease-out;
+    transition: width 1s ease-out;
     width: 100%;
-    color: orange;
+}
+.collapsed div {
+    transition: opacity 1s ease-out;
+    opacity: 0; 
+}
+.expanded div {
+    transition: opacity 0.5s 1s ease-out;
+    opacity: 100;
 }

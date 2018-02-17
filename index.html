@@ -35,27 +35,82 @@
     </div>
     <div class="background">
         <div id="about" class="collapsed">
-            <p>
-                Hey listen! I'm a Software Engineer currently working in the private sector.<br>
-                I graduated from UNH with a BS in Computer Science a few years back.<br>
-                I'm also a Marine veteran and served prior to going to college.<br>
-                My family and I live in Amherst, NH.<br>
-            </p>
-            <p>
-                I'm constantly working on side projects outside of work.<br>
-                You can check out my GitHub to see all the projects I have going on.<br>
-                Some are small scale just to learn a new technology, others are pie in the sky
-                business ideas, and my favorites are video games.<br>
-                My love of video games fuels my passion for video game dev.<br>
-                Ocarina of Time is my favorite game so far.<br>
-                Sometimes my tech projects venture into hardware such as my custom PC and keyboard.<br>
-            </p>
-            <p>
-                I hope something here inspires you! Feel free to reach out via any of the mediums that
-                I've linked throughout this site!
-            </p>
+            <div>
+                <p>
+                    Hey listen!
+                </p>
+                <p>
+                    I'm a Software Engineer currently working in the private sector.<br>
+                    I graduated from UNH with a BS in Computer Science a few years back.
+                </p>
+                <p>
+                    I'm constantly working on side projects outside of work.<br>
+                    You can check out my GitHub to see all the projects I have going on.<br>
+                    Some are small scale just to learn a new technology, others are pie in the sky
+                    business ideas, and my favorites are video games.<br>
+                    My love of video games fuels my passion for video game dev.<br>
+                    Ocarina of Time is my favorite game so far.<br>
+                    Sometimes my tech projects venture into hardware such as my custom PC and keyboard.
+                </p>
+                <p>
+                    I hope something here inspires you!<br>
+                    Feel free to reach out via any of the mediums that I've linked throughout this site!
+                </p>
+            </div>
         </div><div id="projects" class="collapsed"><!-- inline-block can't have space between these divs -->
-            Projects
+            <div>
+                <h2><a href="https://github.com/andrew-boutin/andrew-boutin.github.io">Personal Site</a></h2>
+                <p>
+                    html, css, js
+                </p>
+                <p>
+                    I've gone through many iterations of this. Originally it was a static site hosted on a Digital Ocean droplet using Nginx.
+                    Then I changed it up to a Django web application using Digital Ocean, Nginx, and uWSGI. Now I'm back to a static site, but hosted on
+                    GitHub pages.
+                </p>
+                <h2><a href="https://github.com/andrew-boutin/emmm-slack-bot">Slack Bot</a></h2>
+                <p>
+                    python, slack
+                </p>
+                <p>
+                The EMMM (eeny, meeny, miny, moe) Slack Bot. Set this Slack bot up with your Slack workspace and you'll be able to "@emmm".
+                Emmm will choose a random user from the channel and respond with their @tag. There are some configuration options to do things
+                like ignore other bots present in the channel so they aren't chosen.
+                </p>
+                <h2><a href="https://github.com/andrew-boutin/squares-clone">Squares Clone</a></h2>
+                <p>
+                    python, pygame
+                </p>
+                <p>
+                    This is a clone of the popular <a href="http://www.albinoblacksheep.com/games/squares2">Squares 2</a> game.
+                    Black and red blocks move across the screen at varying speeds. The player's cursor is also a black square.
+                    The object of the game is for the player to collect other black squares with their cursor.
+                    They gain points and their cursor size increases. If the player hits a red square the game ends.
+                    The speed of all the blocks increases as the game progresses. It's a very simple but addicting game.
+                <p>
+                <h2>Geo Wars</h2>
+                <p>
+                    unity, c#
+                </p>
+                <p>
+                    Play <a href="https://www.kongregate.com/games/EclisionGames/geo-wars">Geo Wars</a>!
+                    The game is hosted on Kongregate and requires FireFox with WebPlayer.
+                    If you have a Kongregate account then you can get your high score saved on the site.
+                    This is a simple 2D platformer shooter. You have to avoid fatal terrain and different kinds of enemies to beat the levels.
+                    This was a group project where I did all of the game dev except for the concept and art work.
+                    I can't share the source code because of this.
+                <p>
+                <h2><a href="https://github.com/andrew-boutin/LabyrinthCrawl">Labyrinth Crawl</a></h2>
+                <p>
+                    c++
+                </p>
+                <p>
+                    <a href="binaries/labyrinthcrawl.exe">Download LabyrinthCrawl</a> to play! This is a terminal based strategy game where you try
+                    to escape to labyrinth while fighting enemies along the way.
+                    The mazes are randomly generated so each time you play is different.
+                    Let me know if you beat all 10 levels!
+                <p>
+            </div>
         </div>
     </div>
     <script src="js/scripts.js"></script>
