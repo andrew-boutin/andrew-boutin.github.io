@@ -49,6 +49,7 @@ body {
 }
 .nav button:hover {
     text-decoration: underline;
+    cursor: pointer;
 }
 .external ul {
     margin: 0;
@@ -63,8 +64,9 @@ body {
     height: 38px;
 }
 .external img {
-    width: 32px;
-    height:32px;
+    width: 30px;
+    height:30px;
+    padding-top:4px;
 }
 .profile,
 .nav,
