@@ -22,7 +22,7 @@ body {
     display: flex;
 }
 .control {
-    border-right: 5px solid orange;
+    border-right: 5px solid black;
     width: 192px;
     height: 100%;
     flex: 0 1 auto;
@@ -58,8 +58,9 @@ body {
 }
 .external ul > li {
     display: inline-block;
-    background-color: orange;
+    background-color: #0d9263;
     border-radius: 50%;
+    border: solid black;
     width: 38px;
     height: 38px;
 }
@@ -73,16 +74,21 @@ body {
 .external {
     display: table-row;
 }
-body,
+body {
+    background-color: black;
+}
 .control,
 .nav button,
 .external,
 .background div {
-    background-color: black;
+    background-color: #494b4b;
 }
 .profile p,
 .nav button {
-    color: orange;
+    color: #d4ce46;
+}
+.profile a {
+    color: #0d9263;
 }
 .background {
     animation: 1s ease-out 0s 1 slideInFromRight;
@@ -97,7 +103,16 @@ body,
     overflow: hidden;
     display: inline-block;
     overflow: auto;
-    color: orange;
+    color: #d4ce46;
+}
+.background div div {
+    padding-left: 10px;
+}
+.background div a {
+    color: #4aba91;
+}
+.background div a:visited {
+    color: #0d9263;
 }
 .collapsed {
     transition: width 0.5s 1s ease-out;
