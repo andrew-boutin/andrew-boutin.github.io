@@ -27,6 +27,7 @@ body {
     font-weight: bold;
     text-align: center;
     animation: 1s ease-out 0s 1 slideInFromLeft;
+    position: relative;
 }
 .profile img {
     max-width: 97%;
@@ -48,10 +49,14 @@ body {
     text-decoration: underline;
     cursor: pointer;
 }
+.external {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
 .external ul {
     margin: 0;
     padding: 0;
-    display: table-cell;
 }
 .external ul > li {
     display: inline-block;
