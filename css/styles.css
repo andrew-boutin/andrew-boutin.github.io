@@ -6,7 +6,6 @@
     transform: translateX(0);
   }
 }
-
 @keyframes slideInFromRight {
   0% {
     transform: translateX(100%);
@@ -22,7 +21,6 @@ body {
     display: flex;
 }
 .control {
-    border-right: 5px solid black;
     width: 192px;
     height: 100%;
     flex: 0 1 auto;
@@ -33,7 +31,6 @@ body {
 .profile img {
     max-width: 97%;
     border-radius: 50%;
-    border: solid black;
 }
 .profile p {
     margin: 0;
@@ -58,9 +55,7 @@ body {
 }
 .external ul > li {
     display: inline-block;
-    background-color: #0d9263;
-    border-radius: 50%;
-    border: solid black;
+    background-color: #494b4b;
     width: 38px;
     height: 38px;
 }
@@ -87,9 +82,6 @@ body {
 .nav button {
     color: #d4ce46;
 }
-.profile a {
-    color: #0d9263;
-}
 .background {
     animation: 1s ease-out 0s 1 slideInFromRight;
     background-image: url("../images/background-zelda.jpg");
@@ -103,16 +95,21 @@ body {
     overflow: hidden;
     display: inline-block;
     overflow: auto;
-    color: #d4ce46;
+    color:#d4ce46;
 }
 .background div div {
     padding-left: 10px;
 }
-.background div a {
+.background h2 {
+    color: #0d9263;
+}
+.background div a,
+.profile a {
     color: #4aba91;
 }
-.background div a:visited {
-    color: #0d9263;
+.repo {
+    height: 30px;
+    vertical-align: middle;
 }
 .collapsed {
     transition: width 0.5s 1s ease-out;
