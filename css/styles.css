@@ -29,7 +29,8 @@ body {
     display: flex;
 }
 .control {
-    width: 192px;
+    max-width: 192px;
+    width: 20%;
     height: 100%;
     flex: 0 1 auto;
     font-weight: bold;
@@ -135,4 +136,12 @@ body {
 .expanded div {
     transition: opacity 0.5s 1s ease-out;
     opacity: 100;
+}
+@media all and (max-width: 635px) {
+    .profile a {
+        font-size: 10px;
+    }
+    .nav button {
+        font-size: 15px;
+    }
 }
