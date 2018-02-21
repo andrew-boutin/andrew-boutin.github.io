@@ -52,6 +52,7 @@ body {
 }
 .nav button {
     margin:0 auto;
+    padding: 0;
     border: none;
     font-size: 32px;
 }
@@ -137,11 +138,41 @@ body {
     transition: opacity 0.5s 1s ease-out;
     opacity: 100;
 }
+/* Resize text on left when window shrinks */
 @media all and (max-width: 635px) {
     .profile a {
-        font-size: 10px;
+        font-size: 9px;
+        margin-bottom: 5px;
     }
     .nav button {
         font-size: 15px;
+    }
+    .profile p {
+        margin-bottom: 5px;
+    }
+    .nav {
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+    .nav button {
+        margin-bottom: 5px;
+    }
+}
+/* Keep GitHub icons 4x1, 2x2 or 1x4 */
+@media all and (max-width: 820px) and (min-width: 620px) {
+    .external ul {
+        margin-left: 22px;
+        margin-right: 22px;
+    }
+}
+@media all and (max-width: 620px) and (min-width: 609px) {
+    .external ul {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}
+@media all and (max-width: 609px) {
+    .external ul {
+        margin: 0;
     }
 }
