@@ -14,14 +14,6 @@
     transform: translateX(0);
   } 
 }
-/*
-#25274D - dark blue - background
-#464866
-#AAABB8 - gray - text
-#2E9CCA - light blue - headers
-#29648A - medium blue - text links
-white - icon links / site nav
-*/
 body {
     overflow: hidden;
     margin: 0;
