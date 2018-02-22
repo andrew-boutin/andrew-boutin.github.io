@@ -102,6 +102,15 @@ body {
 }
 .background div div {
     padding-left: 10px;
+    height: auto;
+}
+.background div .tech {
+    border-radius: 500px;
+    background-color: #464866;
+    color: #2E9CCA;
+    padding-left: 7px;
+    padding-right: 7px;
+    margin-right: 6px;
 }
 .background h2 {
     color: #2E9CCA;
