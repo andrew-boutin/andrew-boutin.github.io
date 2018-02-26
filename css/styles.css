@@ -35,6 +35,7 @@ body {
 .profile img {
     max-width: 97%;
     border-radius: 50%;
+    cursor: pointer;
 }
 .profile p {
     margin: 0;

@@ -22,7 +22,13 @@ function transitionEnd(id, event) {
 };
 
 function toggleContent(id) {
-    if(focus == null) {
+    if(id == null) {
+        if(focus != null) {
+            collapseEl(focus);
+            focus = null;
+        }
+    }
+    else if(focus == null) {
         focus = id;
         expandEl(id);
     }
