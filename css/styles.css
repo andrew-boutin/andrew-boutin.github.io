@@ -113,6 +113,11 @@ body {
     padding-right: 7px;
     margin-right: 6px;
 }
+.projImg {
+    max-width: 200px;
+    max-height: 200px;
+    padding-bottom: 16px;
+}
 .background h2 {
     color: #2E9CCA;
 }
