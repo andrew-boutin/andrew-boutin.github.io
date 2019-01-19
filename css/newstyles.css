@@ -1,0 +1,123 @@
+body {
+    height: 100%;
+    margin: 0;
+    transition: transform .2s;
+}
+h1 {
+    font-size:32px;
+    font-weight: 400;
+}
+h3 {
+    font-size: 16px; /* Or 14? */
+    font-weight: 600;
+}
+p {
+    font-size:16px;
+    font-weight: 400;
+    margin:0;
+    line-height: 32px;
+}
+.profile {
+    border-radius: 50%;
+    max-height:50%;
+    max-height:50vh;
+    width: auto;
+    border: solid;
+}
+.imagepop:hover {
+    transform: scale(1.05);
+}
+.dark-background {
+    background-color: #EDEEEF;
+    text-align: center;
+}
+.light-background {
+    background-color: #FFFFFF;
+    text-align: center;
+}
+.game-grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+.game-grid-container div {
+    grid-column-gap: 100px;
+    grid-row-gap: 100px;
+}
+.game-grid-container div img {
+    max-width: 80%;
+    border: solid;
+}
+.typewriter {
+    display:inline;
+}
+.firstdiv {
+    background-image: url('../images/woods.png');
+    color: white;
+    font-style: bold;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 80%;
+    height: 80vh;
+    display: table;
+    width: 100%;
+}
+.firstdiv div {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+ /* https://codepen.io/ArtemGordinsky/pen/GnLBq */
+.blinking-cursor {
+    font-weight: 100;
+    color: #2E3D48;
+    -webkit-animation: 1s blink step-end infinite;
+    -moz-animation: 1s blink step-end infinite;
+    -ms-animation: 1s blink step-end infinite;
+    -o-animation: 1s blink step-end infinite;
+    animation: 1s blink step-end infinite;
+  }
+  
+  @keyframes blink {
+    from, to {
+      color: transparent;
+    }
+    50% {
+      color: white;
+    }
+  }
+  
+  @-moz-keyframes blink {
+    from, to {
+      color: transparent;
+    }
+    50% {
+      color: white;
+    }
+  }
+  
+  @-webkit-keyframes blink {
+    from, to {
+      color: transparent;
+    }
+    50% {
+      color: white;
+    }
+  }
+  
+  @-ms-keyframes blink {
+    from, to {
+      color: transparent;
+    }
+    50% {
+      color: white;
+    }
+  }
+  
+  @-o-keyframes blink {
+    from, to {
+      color: transparent;
+    }
+    50% {
+      color: white;
+    }
+  }
