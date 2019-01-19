@@ -70,3 +70,8 @@ p {
 .firstdiv h1:empty:before {
     content:'|';
 }
+.bakingbits {
+    max-height: 10%;
+    max-height: 10vh;
+    width: auto;
+}
