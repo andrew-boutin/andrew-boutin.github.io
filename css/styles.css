@@ -37,7 +37,7 @@ p {
 }
 .game-grid-container {
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: auto;
 }
 .game-grid-container div {
     grid-column-gap: 100px;
@@ -78,6 +78,11 @@ p {
 
 /* Source http://vclever.com/blog/how-to-style-a-heading-with-horizontal-lines-either-side-using-css/ */
 @media screen and (min-width: 600px) {
+    .game-grid-container {
+        display: grid;
+        grid-template-columns: auto auto auto;
+    }
+
     .lineHeader {
         overflow: hidden;
         text-align: center;
