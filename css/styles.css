@@ -49,6 +49,7 @@ p {
 }
 .firstdiv {
     background-image: url('../images/scene.png');
+    background-position: right center;
     color: white;
     font-style: bold;
     background-size: cover;
@@ -65,7 +66,7 @@ p {
 .firstdiv div h1 {
     margin-top: 5px;
     margin-bottom: 10px;
-    font-size: 48px;
+    font-size: 32px;
 }
 .firstdiv h1:empty:before {
     content:'|';
@@ -78,6 +79,9 @@ p {
 
 /* Source http://vclever.com/blog/how-to-style-a-heading-with-horizontal-lines-either-side-using-css/ */
 @media screen and (min-width: 600px) {
+    .firstdiv div h1 {
+        font-size: 48px;
+    }
     .game-grid-container {
         display: grid;
         grid-template-columns: auto auto auto;

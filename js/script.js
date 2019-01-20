@@ -1,4 +1,4 @@
-var words = ["Software Engineer", "Father", "Video Game Developer", "Husband", "Gamer", "Hunter", "Web Designer", "Writer", "Fisherman"];
+var words = ["Software Engineer", "Father", "Game Developer", "Husband", "Gamer", "Hunter", "Web Designer", "Writer", "Fisherman"];
 
 var curWordCounter = 0;
 var curCharCounter = 0;
