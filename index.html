@@ -8,195 +8,171 @@
     <meta name="keywords" content="Andrew, Boutin, Personal, Website">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="css/styles.css">
-    <link rel="preload" as="image" href="images/profile.png">
-    <link rel="preload" as="image" href="images/background.jpg">
+    <!-- TODO: Preload images <link rel="preload" as="image" href="images/profile.png"> -->
     <link rel="icon" href="images/favicon.ico">
     <link rel="image_src" href="images/profile.png">
+    <!-- https://github.com/michalsnik/aos -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
-    <div class="control">
-        <div class="profile">
-            <img onclick="toggleContent();" src="images/profile.png" alt="Profile Image">
-            <p>Andrew Boutin<p>
-            <p>Software Engineer</p>
+    <!-- TODO: Lots of little animations on hover -->
+    <!-- TODO: All links (icons, text, etc.) should have a hover animation -->
+    <!-- TODO: Mouse should change on hover above all links -->
+    <!-- Two set-points. Full & mobile. -->
+    <div class="light-background firstdiv">
+        <!-- TODO: Nav bar: Resume (TODO: Create repo), contact links.. No background color at top. -->
+        <div>
+            <i>Hi, I'm</i>
+            <h1>Andrew Boutin</h1>
+            <i>and I'm a</i>
+            <h1 id="typeWriter"></h1>
+        </div>
+    </div>
+    <div class="dark-background">
+        <br><br><h1 class="lineHeader">This is Me<h1>
+        <div>
+            <img class="profile imagepop" src="images/profile.png" alt="Avatar">
+            <br><br>
+            <p data-aos="fade-up">
+                I'm a Software Engineer currently working in the private sector.
+                I graduated from UNH with a BS in Computer Science a few years back.
+                <br>
+                I'm constantly working on side projects outside of work.
+                You can check out my <a target="_blank" href="https://github.com/andrew-boutin">GitHub</a> to see all the projects I have going on.
+                Some are small scale to learn a new technology, others because they're interesting, and my favorites are video games.
+                Sometimes my tech projects venture into hardware such as my custom PC and keyboard.
+                <br>
+                I hope something here inspires you!
+                Feel free to reach out via any of the mediums that I've linked throughout this site!
+            <!-- Maybe text on sides -->
+            <!-- TODO: UNH logo, USMC logo, NH seal -->
+            <!-- BS CS . Current job? PC. Keyboard -->
+            <!-- More projects not shown on this site on github -->
+            <!-- GitHub repo icon -->
+            <!-- TODO: Quotes -->
+            <!-- BBS & Game tech: css, unity, etc. -->
+            </p>
+            <br><br>
+        </div>
+    </div>
+    <div class="light-background">
+        <br><br><h1 class="lineHeader">Baking Bits Studios</h1>
+        <div data-aos="fade-up">
+                <img class="imagepop bakingbits" src="images/bakingbits.png"><br><br>
+                <!-- Logo animation -->
+                <p>
+                Here's some of the professional work I've done outside of my full time positions.<br><br>
+                </p>
+        </div>
+        <!-- TODO: Mobile stack -->
+        <div class="game-grid-container" data-aos="fade-up">
+            <div>
+                <img class="imagepop" src="images/farm.png"><h3><a target="blank" href="https://beaverpondfarm.com">Beaver Pond Farm Website</a></h3>
+                <p>This is a website that I created and am maintaining for <a target="blank" href="https://beaverpondfarm.com">Beaver Pond Farm</a> in Newport, NH.</p>
+            </div>
+            <div>
+                <img class="imagepop" src="images/santa.png"><h3><a target="blank" href="https://santasworkshopnh.com">Santa's Workshop Website</a></h3>
+                <p>This is a website that I created and am maintaining for <a target="blank" href="https://santasworkshopnh.com/">Santa's Workshop</a> in Unity, NH.<br>
+                I'm also managing their <a target="blank" href="https://www.facebook.com/santasworkshopnh">Facebook</a> page.</p>
+            </div>
+        </div>
+        <!-- Maybe move tech info into readmes -->
+        <!-- Hover animation -->
+        <br><br><br>
+    </div>
+    <div class="dark-background">
+        <br><br><h1 class="lineHeader">I &hearts; Video Games</h1><br>
+        <div data-aos="fade-up">
             <p>
-                <a target="_blank" href="https://mailhide.io/e/ADrqt">a...@gmail.com</a>
+                <i>“A game is a series of interesting choices.”</i> – Sid Meier</p><br><br>
+                I'm addicted to playing and creating video games! Here are some of the things that I've worked on.<br><br><br>
             </p>
         </div>
-        <div class="nav">
-            <button onclick="toggleContent('about');">About</button>
-            </br>
-            <button onclick="toggleContent('projects');">Projects</button>
-        </div>
-        <div class="external">
-            <ul>
-                <li><a href="https://github.com/andrew-boutin"><img src="images/github.png" alt="Git Hub Icon"></a></li>
-                <li><a href="https://linkedin.com/in/andrewboutin"><img src="images/linkedin.png" alt="LinkedIn Icon"></a></li>
-                <li><a href="https://stackoverflow.com/users/2459730/andrew-cs"><img src="images/stackoverflow.png" alt="Stack Overflow Icon"></a></li>
-                <li><a href="https://twitter.com/andrew_boutin"><img src="images/twitter.png" alt="Twitter Icon"></a></li>
-            </ul>
-        </div>
-    </div>
-    <div class="background">
-        <div id="about" class="collapsed">
+        <!-- TODO: Mobile stack -->
+        <div class="game-grid-container" data-aos="fade-up">
+            <!-- TODO: Repo links -->
+            <!-- Could show tech info on img hover -->
             <div>
-                <p>
-                    I'm a Software Engineer currently working in the private sector.<br>
-                    I graduated from UNH with a BS in Computer Science a few years back.
-                </p>
-                <p>
-                    I'm constantly working on side projects outside of work.<br>
-                    You can check out my <a href="https://github.com/andrew-boutin">GitHub</a>
-                    to see all the projects I have going on.<br>
-                    Some are small scale to learn a new technology, others because they're interesting,
-                    and my favorites are video games.<br>
-                    Sometimes my tech projects venture into hardware such as my custom PC and keyboard.
-                </p>
-                <p>
-                    I hope something here inspires you!<br>
-                    Feel free to reach out via any of the mediums that I've linked throughout this site!
-                </p>
+                <img class="imagepop" src="images/gcr.gif"><h3>Gravity Clutch Racing</h3>
+                <p>A multiplayer vehicle racing game where you can use the gravity clutch to alter the direction of gravity while
+                racing!</p>
             </div>
-        </div><div id="projects" class="collapsed"><!-- inline-block can't have space between these divs -->
             <div>
-                <div>
-                    <h2>Personal Site <a href="https://github.com/andrew-boutin/andrew-boutin.github.io"><img class="repo" src="images/repo.png"></a></h2>
-                    <div class="tech">html</div><div class="tech">css</div><div class="tech">js</div>
-                    <p>
-                        I've gone through many iterations of this.
-                        Originally it was a static site hosted on a Digital Ocean droplet using Nginx.
-                        Then I changed it up to a Django web application using Digital Ocean, Nginx, and uWSGI.
-                        Now I'm back to a static site, but hosted on GitHub pages.
-                    </p>
-                </div>
-                <div>
-                    <h2>Beaver Pond Farm Site <a href="https://github.com/andrew-boutin/farm-site"><img class="repo" src="images/repo.png"></a></h2>
-                    <img class="projImg" src="images/farm.png"></img><br>
-                    <div class="tech">html</div><div class="tech">css</div><div class="tech">js</div>
-                    <p>
-                        This is a website that I created and am maintaining for <a href="beaverpondfarm.com">Beaver Pond Farm</a> in Newport, NH.
-                        Currently, this is a static site hosted with GitHub pages.
-                        The plan is to create a new site using a web framework and add in support for ordering goods and services.
-                    </p>
-                </div>
-                <div>
-                    <h2>Santa's Workshop Site <a href="https://github.com/andrew-boutin/santas-workshop-site"><img class="repo" src="images/repo.png"></a></h2>
-                    <div class="tech">html</div><div class="tech">css</div><div class="tech">js</div>
-                    <p>
-                        This is a website that I created and am maintaining for <a href="http://santasworkshopnh.com">Santa's Workshop</a> in Unity, NH.
-                        Currently, this is a static site hosted with GitHub pages. I'm also managing their <a href="https://www.facebook.com/santasworkshopnh/">Facebook page</a>.
-                    </p>
-                </div>
-                <div>
-                    <h2>DnD Text API <a href="https://github.com/andrew-boutin/dndtextapi"><img class="repo" src="images/repo.png"></a></h2>
-                    <div class="tech">go</div><div class="tech">python</div><div class="tech">gin</div><div class="tech">google-api</div><div class="tech">postgresql</div><div class="tech">docker</div><div class="tech">docker-compose</div>
-                    <p>
-                        This is a Go REST API to support DnD text adventures.
-                        The main functionality allows users to use channels to send and receive messages to form their DnD adventures.
-                        Log in with Google to authenticate.
-                        There's also a <a href="https://github.com/mupchrch/dndtextui">DnD text UI</a> maintained by someone else that interfaces with it.
-                    </p>
-                </div>
-                <div>
-                    <h2>Gravity Clutch Racing</h2>
-                    <img class="projImg" src="images/gcr.gif"></img><br>
-                    <div class="tech">unity</div><div class="tech">c#</div><div class="tech">networking</div>
-                    <p>
-                        A multiplayer vehicle racing game where you can use the <i>gravity clutch</i> to alter the direction of gravity while racing!
-                        Developed primarily with Unity and <a href="https://github.com/BeardedManStudios/ForgeNetworkingRemastered">Forge Networking Remastered</a>.
-                        This is currently a private repo so no link is available, but the game should be hosted somewhere in the near future.
-                    </p>
-                </div>
-                <div>
-                    <h2>Go Chat <a href="https://github.com/andrew-boutin/go-chat"><img class="repo" src="images/repo.png"></a></h2>
-                    <img class="projImg" src="images/gochat.png"></img><br>
-                    <div class="tech">go</div><div class="tech">gin</div><div class="tech">google-api</div><div class="tech">redis</div><div class="tech">docker</div><div class="tech">docker-compose</div>
-                    <p>
-                        A chat app written in Go that allows you to chat with other users.
-                        Log in with Google to allow the app to know who you are.
-                        See what other users are logged on, send messages, and receive messages.
-                        This project was primarily for learning Go and brushing up on things such as Redis and Docker.
-                    </p>
-                </div>
-                <div>
-                    <h2>Crazy Canal Tower Defense <a href="https://github.com/andrew-boutin/tower-defense"><img class="repo" src="images/repo.png"></a></h2>
-                    <img class="projImg" src="images/tower.gif"></img><br>
-                    <div class="tech">unity</div><div class="tech">c#</div>
-                    <p>
-                        A tower defense game where your objective is to strategically place defense towers to prevent enemy water craft from reaching the end of the canal.
-                        Developed with Unity.
-                    </p>
-                </div>
-                <div>
-                    <h2>Slack Bot <a href="https://github.com/andrew-boutin/emmm-slack-bot"><img class="repo" src="images/repo.png"></a></h2>
-                    <div class="tech">python</div><div class="tech">slack</div>
-                    <p>
-                        The EMMM (eeny, meeny, miny, moe) Slack Bot.
-                        Set this Slack bot up with your Slack workspace and you'll be able to "@emmm".
-                        Emmm will choose a random user from the channel and respond with their @tag.
-                        There are some configuration options to do things like ignore other bots present in the channel so they aren't chosen.
-                    </p>
-                </div>
-                <div>
-                    <h2>Squares Clone <a href="https://github.com/andrew-boutin/squares-clone"><img class="repo" src="images/repo.png"></a></h2>
-                    <img class="projImg" src="images/squares.png"></img><br>
-                    <div class="tech">python</div><div class="tech">pygame</div>
-                    <p>
-                        This is a clone of the popular <a href="http://www.albinoblacksheep.com/games/squares2">Squares 2</a> game.
-                        Black and red blocks move across the screen at varying speeds. The player's cursor is also a black square.
-                        The object of the game is for the player to collect other black squares with their cursor.
-                        They gain points and their cursor size increases. If the player hits a red square the game ends.
-                        The speed of all the blocks increases as the game progresses. It's a very simple but addicting game.
-                    </p>
-                </div>
-                <div>
-                    <h2>Geo Wars</h2>
-                    <img class="projImg" src="images/geo.png"></img><br>
-                    <div class="tech">unity</div><div class="tech">c#</div><div class="tech">kongregate-api</div>
-                    <p>
-                        Play <a href="https://www.kongregate.com/games/EclisionGames/geo-wars">Geo Wars</a>!
-                        The game is hosted on Kongregate and requires either IE11 or Safari with WebPlayer
-                        (Unity stopped supporting WebPlayer so the game most likely won't load on the site).
-                        If you have a Kongregate account then you can get your high score saved on the site.
-                        This is a simple 2D platformer shooter. You have to avoid fatal terrain and different kinds of enemies to beat the levels.
-                        This was a group project where I did all of the game dev except for the concept and art work.
-                        I can't share the source code because of this.
-                    </p>
-                </div>
-                <div>
-                    <h2>Epic Crawl <a href="https://github.com/andrew-boutin/EpicCrawl"><img class="repo" src="images/repo.png"></a></h2>
-                    <img class="projImg" src="images/epiccrawl.gif"></img><br>
-                    <div class="tech">java</div><div class="tech">sqlite</div><div class="tech">jdbc</div>
-                    <p>
-                        This is a 2D top down RPG that features a level designer for players to build their own
-                        adventure. This was in a semi playable state, but I started revamping it so currently only the
-                        level designer is functional.
-                    </p>
-                </div>
-                <div>
-                    <h2>Idle Fidget Spinners <a href="https://github.com/andrew-boutin/idle-fidget-spinners-web-ui"><img class="repo" src="images/repo.png"></a></h2>
-                    <img class="projImg" src="images/idle.gif"></img><br>
-                    <div class="tech">html</div><div class="tech">css</div><div class="tech">javascript</div>
-                    <p>
-                        Play <a href="https://andrew-boutin.github.io/idle-fidget-spinners-web-ui">Idle Fidget Spinners</a>!
-                        Create different kinds of fidget spinners and keep them spinning to earn money.
-                        Earn money to buy more fidgt spinners of course.
-                        This is a classic idle progression game hosted on GitHub pages.
-                    </p>
-                </div>
-                <div>
-                    <h2>Labyrinth Crawl <a href="https://github.com/andrew-boutin/LabyrinthCrawl"><img class="repo" src="images/repo.png"></a></h2>
-                    <div class="tech">c++</div>
-                    <p>
-                        <a href="binaries/labyrinthcrawl.exe">Download LabyrinthCrawl</a> to play! This is a terminal based strategy game where you try
-                        to escape to labyrinth while fighting enemies along the way.
-                        The mazes are randomly generated so each time you play is different.
-                        Let me know if you beat all 10 levels!
-                    </p>
-                </div>
+                <img class="imagepop" src="images/geo.png"><h3>Geo Wars</h3>
+                <p>Play <a target="blank" href="https://www.kongregate.com/games/EclisionGames/geo-wars">Geo Wars</a> on Kongregate.
+                    Requires either IE11 or Safari with WebPlayer
+                    (Unity stopped supporting WebPlayer so the game most likely won't load on the site). If you have a Kongregate
+                    account then you can get your high score saved on the site. This is a simple 2D platformer shooter. You have to
+                    avoid fatal terrain and different kinds of enemies to beat the levels. This was a group project where I did all
+                    of the game dev except for the concept and art work. I can't share the source code because of this.</p>
+            </div>
+            <div>
+                <img class="imagepop" src="images/tower.gif"><h3>Crazy Canal Tower Defense</h3>
+                <p>A tower defense game where your objective is to strategically place defense towers to prevent enemy water craft
+                    from reaching the end of the canal.</p>
+            </div>
+            <div>
+                <img class="imagepop" src="images/squares.png"><h3>Squares Clone</h3>
+                <p>This is a clone of the popular Squares 2 game. Black and red blocks move across the screen at varying speeds. The
+                    object of the game is for the player to collect black squares. They gain points and their size increases. If the
+                    player hits a red square the game ends. The speed of all the blocks increases as the game progresses. It's a very
+                    simple but addicting game.</p>
+            </div>
+            <div>
+                <img class="imagepop" src="images/epiccrawl.gif"><h3>Epic Crawl</h3>
+                <p>This is a 2D top down RPG that features a level designer for players to build their own adventure. Currently only
+                    the level designer is playable.</p>
+            </div>
+            <div>
+                <img class="imagepop" src="images/idle.gif"><h3>Idle Fidget Spinners</h3>
+                <p><a target="blank" href="https://andrew-boutin.github.io/idle-fidget-spinners-web-ui">Play Idle Fidget Spinners</a>!
+                    Create different kinds of fidget spinners and keep them spinning to earn money. Earn money to buy more fidgt
+                    spinners of course. This is a classic idle progression game.</p>
+            </div>
+            <div>
+                <img class="imagepop" src="images/gcr.gif"><h3>Labyrinth Crawl</h3>
+                <p><a target="blank" href="https://andrewboutin.com/binaries/labyrinthcrawl.exe">Download LabyrinthCrawl</a> to play! This is a terminal based strategy game where you try to escape to labyrinth while
+                    fighting enemies along the way. The mazes are randomly generated so each time you play is different. Let me know
+                    if you beat all 10 levels!</p>
+            </div>
+        </div><br><br>
+        <!-- TODO: Move bulk of tech info into readmes -->
+    </div>
+    <div class="light-background">
+        <br><br><h1 class="lineHeader">Community Outreach</h1><br><br>
+        <!-- TODO: Mobile stack -->
+        <div class="game-grid-container" data-aos="fade-up">
+            <div>
+                <img class="imagepop" src="images/fll.jpg"><h3>Lego Coach</h3><p>I'm a <a target="_blank" href="https://www.firstinspires.org/robotics/fll">FIRST Lego League</a> volunteer coach at the middle school in Merrimack, NH.
+                Every week I get to teach kids about programming and problem solving with legos!</p>
+            </div>
+            <div>
+                <img class="imagepop" src="images/maven.png"><h3>MAVEN Site Lead</h3><p>I founded the MAVEN (Military and Veteran Employee Network) chapter within Oracle in Manchester, NH.
+                    Logo. As a USMC veteran, I wanted to do everything I could to ensure my fellow veteran co-workers were as successful as possible. Check out our
+                    <a target="_blank" href="https://www.facebook.com/MAVENMHT">Facebook</a> and <a target="_blank" href="https://twitter.com/MavenMht">Twitter</a> pages.</p>
             </div>
         </div>
+        <br><br>
     </div>
-    <script src="js/scripts.js"></script>
+    <div class="dark-background">
+        <br><br><h1 class="lineHeader">Let's Work Together</h1><br><br>
+        <div>
+            <p>
+                Let's get in touch and build something cool.<br>
+                <!-- TODO: Link icons: Twitter, GitHub, LinkedIn, StackOverflow. Different color icon on hover. Others disabled color. -->
+                <a target="_blank" href="https://linkedin.com/in/andrewboutin">LinkedIn</a>, <a target="_blank" href="https://github.com/andrew-boutin">GitHub</a>, <a target="_blank" href="https://twitter.com/andrew_boutin">Twitter</a>, <a target="_blank" href="https://stackoverflow.com/users/2459730/andrew-cs">Stack Overflow</a>, <a target="_blank" href="https://www.gamedev.net/profile/239137-andrew-coder/">Gamedev</a>, <a target="_blank" href="https://www.indiedb.com/members/andrew-cs">IndieDB</a>, Resume?, <a target="_blank" href="https://mailhide.io/e/ADrqt">a...@gmail.com</a>
+                <br><a target="_blank" href="oldindex">Legacy</a>
+            </p>
+        </div>
+        <br><br><br>
+    </div>
+    <!-- Additional section? DnD text API, Go Chat, Slack Bot... -->
+    <!-- TODO: Take all project info from last version and put into READMEs. -->
+    <script src="js/script.js"></script>
+    <!-- https://github.com/michalsnik/aos -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>

@@ -1,185 +1,101 @@
-@keyframes slideInFromLeft {
-  0% {
-    transform: translateX(-100%);
-  }
-  100% {
-    transform: translateX(0);
-  }
-}
-@keyframes slideInFromRight {
-  0% {
-    transform: translateX(100%);
-  }
-  100% {
-    transform: translateX(0);
-  } 
-}
 body {
-    overflow: hidden;
-    margin: 0;
-    height: 100vh;
-    display: flex;
-}
-.control {
-    max-width: 192px;
-    width: 20%;
     height: 100%;
-    flex: 0 1 auto;
-    font-weight: bold;
-    text-align: center;
-    animation: 1s ease-out 0s 1 slideInFromLeft;
-    overflow-y: scroll;
-    display: flex;
-    flex-direction: column;
+    margin: 0;
+    transition: transform .2s;
 }
-.profile img {
-    max-width: 97%;
+h1 {
+    font-size:32px;
+    font-weight: 400;
+}
+h3 {
+    font-size: 16px;
+    font-weight: 600;
+}
+p {
+    font-size:16px;
+    font-weight: 400;
+    margin:0;
+    line-height: 32px;
+}
+.profile {
     border-radius: 50%;
-    cursor: pointer;
+    max-height:50%;
+    max-height:50vh;
+    width: auto;
+    border: solid;
 }
-.profile p {
-    margin: 0;
+.imagepop:hover {
+    transform: scale(1.05);
 }
-.nav {
-    height: 100%;
+.dark-background {
+    background-color: #EDEEEF;
+    text-align: center;
 }
-.nav button {
-    margin:0 auto;
-    padding: 0;
-    border: none;
-    font-size: 32px;
+.light-background {
+    background-color: #FFFFFF;
+    text-align: center;
 }
-.nav button:hover {
-    text-decoration: underline;
-    cursor: pointer;
+.game-grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
 }
-.external {
-    width: 100%;
+.game-grid-container div {
+    grid-column-gap: 100px;
+    grid-row-gap: 100px;
 }
-.external ul {
-    margin: 0;
-    padding: 0;
+.game-grid-container div img {
+    max-width: 80%;
+    border: solid;
 }
-.external ul > li {
-    display: inline-block;
-    background-color: #25274D;;
-    width: 38px;
-    height: 38px;
-}
-.external img {
-    width: 30px;
-    height:30px;
-    padding-top:4px;
-}
-body {
-    background-color: #25274D;
-}
-.control,
-.nav button,
-.external,
-.background div {
-    background-color: #25274D;
-}
-.profile p {
-    color: #2E9CCA;
-}
-.nav button {
+.firstdiv {
+    background-image: url('../images/woods.png');
     color: white;
-}
-.background {
-    animation: 1s ease-out 0s 1 slideInFromRight;
-    background-image: url("../images/background.jpg");
+    font-style: bold;
     background-size: cover;
     background-repeat: no-repeat;
-    height:100%;
-    flex: 1;
-}
-.background div {
-    height: 100%;
-    overflow: hidden;
-    display: inline-block;
-    overflow: auto;
-    color:#AAABB8;
-}
-.background div div {
-    padding-left: 10px;
-    height: auto;
-}
-.background div .tech {
-    border-radius: 500px;
-    background-color: #464866;
-    color: #2E9CCA;
-    padding-left: 7px;
-    padding-right: 7px;
-    margin-right: 6px;
-}
-.projImg {
-    max-width: 200px;
-    max-height: 200px;
-    padding-bottom: 16px;
-}
-.background h2 {
-    color: #2E9CCA;
-}
-.background div a,
-.profile a {
-    color: #29648A;
-}
-.repo {
-    height: 30px;
-    vertical-align: middle;
-}
-.collapsed {
-    transition: width 0.5s 1s ease-out;
-    width: 0%;
-}
-.expanded {
-    transition: width 1s ease-out;
+    height: 80%;
+    height: 80vh;
+    display: table;
     width: 100%;
 }
-.collapsed div {
-    transition: opacity 1s ease-out;
-    opacity: 0; 
+.firstdiv div {
+    display: table-cell;
+    vertical-align: middle;
 }
-.expanded div {
-    transition: opacity 0.5s 1s ease-out;
-    opacity: 100;
+.firstdiv div h1 {
+    margin-top: 5px;
+    margin-bottom: 10px;
+    font-size: 48px;
 }
-/* Resize text on left when window shrinks */
-@media all and (max-width: 635px) {
-    .profile a {
-        font-size: 9px;
-        margin-bottom: 5px;
-    }
-    .nav button {
-        font-size: 15px;
-    }
-    .profile p {
-        margin-bottom: 5px;
-    }
-    .nav {
-        margin-top: 5px;
-        margin-bottom: 5px;
-    }
-    .nav button {
-        margin-bottom: 5px;
-    }
+.firstdiv h1:empty:before {
+    content:'|';
 }
-/* Keep GitHub icons 4x1, 2x2 or 1x4 */
-@media all and (max-width: 820px) and (min-width: 620px) {
-    .external ul {
-        margin-left: 22px;
-        margin-right: 22px;
-    }
+.bakingbits {
+    max-height: 10%;
+    max-height: 10vh;
+    width: auto;
 }
-@media all and (max-width: 620px) and (min-width: 609px) {
-    .external ul {
-        margin-left: 20px;
-        margin-right: 20px;
-    }
+
+/* Source http://vclever.com/blog/how-to-style-a-heading-with-horizontal-lines-either-side-using-css/ */
+.lineHeader {
+    overflow: hidden;
+    text-align: center;
 }
-@media all and (max-width: 609px) {
-    .external ul {
-        margin: 0;
-    }
+.lineHeader:before,
+.lineHeader:after {
+    background-color: black;
+    content: "";
+    display: inline-block;
+    height: 2px;
+    position: relative;
+    vertical-align: middle;
+    width: 5%;
+}
+.lineHeader:before {
+    right: 0.5em;
+    margin-left: -50%;
+}
+.lineHeader:after {
+    left: 0.5em;
+    margin-right: -50%;
 }
