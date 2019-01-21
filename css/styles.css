@@ -38,10 +38,8 @@ p {
 .game-grid-container {
     display: grid;
     grid-template-columns: auto;
-}
-.game-grid-container div {
-    grid-column-gap: 100px;
-    grid-row-gap: 100px;
+    grid-row-gap: 30px;
+    grid-column-gap: 30px;
 }
 .game-grid-container div img {
     max-width: 80%;
