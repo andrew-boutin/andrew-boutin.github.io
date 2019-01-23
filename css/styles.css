@@ -8,7 +8,7 @@ h1 {
     font-weight: 400;
 }
 h3 {
-    font-size: 16px;
+    font-size: 24px;
     font-weight: 600;
 }
 p {
@@ -69,10 +69,26 @@ p {
 .firstdiv h1:empty:before {
     content:'|';
 }
-.bakingbits {
-    max-height: 10%;
-    max-height: 10vh;
-    width: auto;
+.repo {
+    /* TODO: Don't use !important */
+    max-width: 7% !important;
+    vertical-align: top;
+    border-radius: 0% 25% 25% 0%;
+}
+.img-link {
+    color:inherit;
+}
+.footer-img {
+    border-radius: 50%;
+    width: 60px;
+    background-color: black;
+    margin-top: 10px;
+}
+.footer-img:hover {
+    filter: invert(100%);
+}
+.footer-link {
+    font-size: 18px;
 }
 
 /* Source http://vclever.com/blog/how-to-style-a-heading-with-horizontal-lines-either-side-using-css/ */
