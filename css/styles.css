@@ -74,6 +74,7 @@ p {
     max-width: 7% !important;
     vertical-align: top;
     border-radius: 0% 25% 25% 0%;
+    background-color: black;
 }
 .img-link {
     color:inherit;
