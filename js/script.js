@@ -10,8 +10,6 @@ e = document.getElementById("typeWriter");
 var do_this = null;
 var wasDelayed = false;
 
-// TODO: Randomize the wait inbetween letters for a more realistic typing speed
-// TODO: Fast character removal instead of clearing to mimic deletion
 function typeWriter() {
     if(wasDelayed) {
         e.innerHTML = "";

@@ -29,19 +29,21 @@
         <div>
             <img class="profile imagepop" src="images/profile.png" alt="Avatar">
             <br><br>
-            <div class="about-wrapper">
-                <p data-aos="fade-up" class="about">
-                    I'm a Software Engineer with a BS in Computer Science, and I love what I do. Welcome to my site where I
-                    have showcased some of my favorite side projects. You can check out
-                    <a target="_blank" href="https://linkedin.com/in/andrewboutin">LinkedIn</a> for all the goods about my
-                    career. Take a look at <a target="_blank" href="https://github.com/andrew-boutin">GitHub</a> for other
-                    projects not shown here. I hope something inspires you!
-                </p>
+            <div data-aos="fade-up">
+                <div class="about-wrapper">
+                    <p class="about">
+                        I'm a Software Engineer with a BS in Computer Science, and I love what I do. Welcome to my site where I
+                        have showcased some of my favorite side projects. You can check out
+                        <a target="_blank" href="https://linkedin.com/in/andrewboutin">LinkedIn</a> for all the goods about my
+                        career. Take a look at <a target="_blank" href="https://github.com/andrew-boutin">GitHub</a> for other
+                        projects not shown here. I hope something inspires you!
+                    </p>
+                </div>
+                <br>
+                <img class="icon-img imagepop" src="images/nh.png">
+                <img class="icon-img imagepop" src="images/ega.png">
+                <img class="icon-img imagepop" src="images/unh.png">
             </div>
-            <br>
-            <img class="icon-img imagepop" src="images/nh.png">
-            <img class="icon-img imagepop" src="images/ega.png">
-            <img class="icon-img imagepop" src="images/unh.png">
             <br><br><br>
         </div>
     </div>
@@ -55,13 +57,13 @@
         <div class="game-grid-container" data-aos="fade-up">
             <div>
                 <h3><a target="blank" href="https://beaverpondfarm.com">Beaver Pond Farm Website</a></h3>
-                <img class="imagepop" src="images/farm.png">
+                <img class="imagepop other-grid-img" src="images/farm.png">
                 <p>This is a website that I created and am maintaining for <a target="blank" href="https://beaverpondfarm.com">Beaver Pond Farm</a> in Newport, NH.</p>
             </div>
             <div>
                 <h3><a target="blank" href="https://santasworkshopnh.com">Santa's Workshop Website</a></h3>
-                <img class="imagepop" src="images/santa.png">
-                <p>This is a website that I created and am maintaining for <a target="blank" href="https://santasworkshopnh.com/">Santa's Workshop</a> in Unity, NH.<br>
+                <img class="imagepop other-grid-img" src="images/santa.png">
+                <p>This is a website that I created and am maintaining for <a target="blank" href="https://santasworkshopnh.com/">Santa's Workshop</a> in Unity, NH.
                 I'm also managing their <a target="blank" href="https://www.facebook.com/santasworkshopnh">Facebook</a> page.</p>
             </div>
         </div>
@@ -75,13 +77,11 @@
                 I'm addicted to playing and creating video games! Here are some of the things that I've worked on.<br><br><br>
             </p>
         </div>
-        <!-- TODO: Possibly move GitHub links into a corner. -->
-        <!-- TODO: Test out inverting colors. -->
         <div class="game-grid-container" data-aos="fade-up">
             <!-- TODO: Play! link like GitHub link. Idle, Labyrinth, Geo Wars -->
             <div>
                 <h3>Gravity Clutch Racing</h3>
-                <img class="imagepop" src="images/gcr.gif">
+                <img class="game-grid-img" src="images/gcr.gif">
                 <p>
                     A multiplayer vehicle racing game where you can use the gravity clutch to alter the direction of gravity while
                     racing!
@@ -89,7 +89,7 @@
             </div>
             <div>
                 <h3>Geo Wars</h3>
-                <img class="imagepop" src="images/geo.png">
+                <img class="game-grid-img" src="images/geo.png">
                 <p>
                     Play <a target="blank" href="https://www.kongregate.com/games/EclisionGames/geo-wars">Geo Wars</a> on Kongregate.
                     This is a cool 2D platformer shooter. Avoid fatal terrain while using your arsenal of weapons to defeat your enemies.
@@ -98,7 +98,10 @@
             </div>
             <div>
                 <h3>Crazy Canal Tower Defense</h3>
-                <img class="imagepop" src="images/tower.gif"><a target="blank" class="img-link" href="https://github.com/andrew-boutin/tower-defense"><img class="repo imagepop" src="images/githubonside.png"></a>
+                <div class="game-grid-img-wrapper">
+                    <img class="game-grid-img" src="images/tower.gif">
+                    <a target="_blank" href="https://github.com/andrew-boutin/tower-defense" class="github-corner" aria-label="View source on GitHub"><svg width="70" height="70" viewBox="0 0 250 250" style="fill:#151513; color:#fff; position: absolute; top: 0; border: 0; right: 0;" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
+                </div>
                 <p>
                     A tower defense game where your objective is to strategically place turrets to prevent enemy water craft
                     from reaching the end of the canal.
@@ -106,21 +109,30 @@
             </div>
             <div>
                 <h3>Epic Crawl</h3>
-                <img class="imagepop" src="images/epiccrawl.gif"><a target="blank" class="img-link" href="https://github.com/andrew-boutin/EpicCrawl"><img class="repo imagepop" src="images/githubonside.png"></a>
+                <div class="game-grid-img-wrapper">
+                    <img class="game-grid-img" src="images/epiccrawl.gif">
+                    <a target="_blank" href="https://github.com/andrew-boutin/tower-defense" class="github-corner" aria-label="View source on GitHub"><svg width="70" height="70" viewBox="0 0 250 250" style="fill:#151513; color:#fff; position: absolute; top: 0; border: 0; right: 0;" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
+                </div>
                 <p>
                     This is a 2D top down RPG that features a level designer for you to build your own adventure.
                 </p>
             </div>
             <div>
                 <h3>Squares Clone</h3>
-                <img class="imagepop" src="images/squares.png"><a target="blank" class="img-link" href="https://github.com/andrew-boutin/squares-clone"><img class="repo imagepop" src="images/githubonside.png"></a>
+                <div class="game-grid-img-wrapper">
+                    <img class="game-grid-img" src="images/squares.png">
+                    <a target="_blank" href="https://github.com/andrew-boutin/tower-defense" class="github-corner" aria-label="View source on GitHub"><svg width="70" height="70" viewBox="0 0 250 250" style="fill:#151513; color:#fff; position: absolute; top: 0; border: 0; right: 0;" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
+                </div>
                 <p>
                     A clone of the popular Squares 2 game.
                 </p>
             </div>
             <div>
                 <h3>Idle Fidget Spinners</h3>
-                <img class="imagepop" src="images/idle.gif"><a target="blank" class="img-link" href="https://github.com/andrew-boutin/idle-fidget-spinners-web-ui"><img class="repo imagepop" src="images/githubonside.png"></a>
+                <div class="game-grid-img-wrapper">
+                    <img class="game-grid-img" src="images/idle.gif">
+                    <a target="_blank" href="https://github.com/andrew-boutin/tower-defense" class="github-corner" aria-label="View source on GitHub"><svg width="70" height="70" viewBox="0 0 250 250" style="fill:#151513; color:#fff; position: absolute; top: 0; border: 0; right: 0;" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
+                </div>
                 <p>
                     <a target="blank" href="https://andrew-boutin.github.io/idle-fidget-spinners-web-ui">Play Idle Fidget Spinners</a>!
                     Create different kinds of fidget spinners and keep them spinning to earn money. Earn money to buy more fidget
@@ -130,7 +142,10 @@
             <div>
                 <!-- TODO: Need gif of actual game. -->
                 <h3>Labyrinth Crawl</h3>
-                <img class="imagepop" src="images/gcr.gif"><a target="blank" class="img-link" href="https://github.com/andrew-boutin/labyrinth-crawl"><img class="repo imagepop" src="images/githubonside.png"></a>
+                <div class="game-grid-img-wrapper">
+                    <img class="game-grid-img" src="images/gcr.gif">
+                    <a target="_blank" href="https://github.com/andrew-boutin/tower-defense" class="github-corner" aria-label="View source on GitHub"><svg width="70" height="70" viewBox="0 0 250 250" style="fill:#151513; color:#fff; position: absolute; top: 0; border: 0; right: 0;" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
+                </div>
                 <p>
                     <a target="blank" href="https://andrewboutin.com/binaries/labyrinthcrawl.exe">Download LabyrinthCrawl</a> to play!
                     Try to escape the labyrinth with your life. Let me know if you beat all 10 levels!
@@ -169,7 +184,6 @@
             <p>
                 Let's get in touch and build something cool.<br>
                 <a target="_blank" class="footer-link" href="https://mailhide.io/e/ADrqt">a...@gmail.com</a> / <a target="_blank" class="footer-link" href="https://github.com/andrew-boutin/resume">Resume</a><br>
-                <!-- TODO: When one icon is hovered then gray out the rest. -->
                 <a target="_blank" href="https://linkedin.com/in/andrewboutin"><img class="icon-img hoverinvert imagepop" src="images/linkedin.png"></a>
                 <a target="_blank" href="https://github.com/andrew-boutin"><img class="icon-img hoverinvert imagepop" src="images/github.png"></a>
                 <a target="_blank" href="https://twitter.com/andrew_boutin"><img class="icon-img hoverinvert imagepop" src="images/twitter.png"></a>
