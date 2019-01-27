@@ -2,7 +2,7 @@
 
 This is my [personal site](https://andrewboutin.com) hosted with GitHub pages.
 
-I made it with html, css, javascript, [MailHide.io](https://mailhide.io/), and [AOS](https://michalsnik.github.io/aos/).
+I made it with html, css, javascript, [MailHide.io](https://mailhide.io/), [AOS](https://michalsnik.github.io/aos/), and [GitHub Corners](https://github.com/tholman/github-corners).
 
 ## History
 
