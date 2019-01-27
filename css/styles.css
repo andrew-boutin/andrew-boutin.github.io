@@ -79,16 +79,6 @@ p {
 .firstdiv h1:empty:before {
     content:'|';
 }
-.repo {
-    /* TODO: Don't use !important */
-    max-width: 7% !important;
-    vertical-align: top;
-    border-radius: 0% 25% 25% 0%;
-    background-color: black;
-}
-.img-link {
-    color:inherit;
-}
 .icon-img {
     border-radius: 50%;
     width: 48px;
