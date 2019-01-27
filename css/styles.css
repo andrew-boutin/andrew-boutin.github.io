@@ -91,6 +91,13 @@ p {
 .footer-link {
     font-size: 18px;
 }
+.about-wrapper {
+    width: 90%;
+    margin: 0 auto;
+}
+.about {
+    text-align: justify;
+}
 
 /* Source http://vclever.com/blog/how-to-style-a-heading-with-horizontal-lines-either-side-using-css/ */
 @media screen and (min-width: 600px) {
@@ -126,5 +133,8 @@ p {
     }
     .icon-img {
         width: 60px;
+    }
+    .about-wrapper {
+        width: 518px;
     }
 }
