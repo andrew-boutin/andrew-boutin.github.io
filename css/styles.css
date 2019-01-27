@@ -81,7 +81,7 @@ p {
 }
 .footer-img {
     border-radius: 50%;
-    width: 60px;
+    width: 48px;
     background-color: black;
     margin-top: 10px;
 }
@@ -123,5 +123,8 @@ p {
     .lineHeader:after {
         left: 0.5em;
         margin-right: -50%;
+    }
+    .footer-img {
+        width: 60px;
     }
 }
